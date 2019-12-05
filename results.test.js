@@ -9,4 +9,7 @@ const getMinTransaction = D.getMinTransaction;
 const getMaxTransaction = D.getMaxTransaction;
 const getContribData = D.getContribData;
 
-getContribData();
+test('the finalData object is returned and has appropriate keys', async () => {
+  const finalData = await getContribData();
+  expect(finalData).toHaveProperty('democrat');
+});
