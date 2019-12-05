@@ -1,0 +1,25 @@
+{
+  "name": "contributionsapi",
+  "version": "1.0.0",
+  "engines": {
+    "node": "^12.12.0"
+  },
+  "description": "API giving aggregate information regarding 2014 GA Senatorial campaign contributions by political party",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "jest"
+  },
+  "author": "Zach Parker",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  }
+}
