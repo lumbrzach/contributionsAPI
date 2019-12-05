@@ -26,22 +26,22 @@ let swafTransactions = '';
 let perdueTransactions = '';
 let finalData = {
   republican: {
-    aggregate: '',
-    average: '',
-    min: '',
-    max: ''
+    aggregate: null,
+    average: null,
+    min: null,
+    max: null
   },
   democrat: {
-    aggregate: '',
-    average: '',
-    min: '',
-    max: ''
+    aggregate: null,
+    average: null,
+    min: null,
+    max: null
   },
   libertarian: {
-    aggregate: '',
-    average: '',
-    min: '',
-    max: ''
+    aggregate: null,
+    average: null,
+    min: null,
+    max: null
   }
 };
 
@@ -150,6 +150,10 @@ const isolateOfficialLastName = async () => {
   perdueLast = officials[2].name.split(' ')[2];
 };
 
+const getOfficialInfo = async () => {
+  return officials;
+};
+
 module.exports = {
   isolateOfficialLastName,
   assignMaplightID,
@@ -159,5 +163,6 @@ module.exports = {
   getIndividualTransactions,
   getMinTransaction,
   getMaxTransaction,
+  getOfficialInfo,
   getContribData
 };

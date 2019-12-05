@@ -7,7 +7,8 @@
   "description": "API giving aggregate information regarding 2014 GA Senatorial campaign contributions by political party",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
+    "start-dev": "nodemon server.js",
     "test": "jest"
   },
   "author": "Zach Parker",
@@ -18,6 +19,7 @@
   },
   "dependencies": {
     "axios": "^0.19.0",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "morgan": "^1.9.1"
