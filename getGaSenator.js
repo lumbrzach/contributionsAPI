@@ -7,7 +7,7 @@ const GOOGLE_TEST_URL = `https://www.googleapis.com/civicinfo/v2/voterinfo?addre
 const MAPLIGHT_NAMES_URL =
   'https://api.maplight.org/maplight-api/fec/candidate_names/';
 const MAPLIGHT_CONTRIBUTIONS_BY_ID =
-  'https://api.maplight.org/maplight-api/fec/contributions?candidate_mlid=';
+  'https://api.maplight.org/maplight-api/fec/contributions?election_cycle=2014&candidate_mlid=';
 
 ////////////// GLOBAL VARIABLES FOR DATA MANIPULATIPON //////////////////////////
 
